@@ -1,3 +1,4 @@
+## Application
 A. Create an Android mobile application, compatible for Android 8.0 and higher. The application must include the following functional requirements:
 1. Create a user option to enter term titles (e.g., Term 1, Term 2, Spring Term), start dates, and end dates for each term.
 
@@ -60,9 +61,11 @@ C. Implement a scheduler within your application from Part A and include the fol
   - two layouts
   - input controls
   - buttons
- 
+
+## Storyboard
 D. Create a storyboard to demonstrate application flow that includes each of the menus and screens from part B.
- 
+
+## Documentation
 E. Provide screen shots of generating the signed APK to demonstrate that you have created a deployment package.
  
 F. Reflect on the creation of your mobile application by doing the following:
