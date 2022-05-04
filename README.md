@@ -17,8 +17,8 @@ Once again, similar to the previous lists, the assessment list allows the user t
 Menu options for all three edit views of term, course, and assessment allow the user to delete the selected object. For courses and assessments, the user can also set alerts for the start and end dates of the course or assessment. These alerts will appear even if the application is closed. Courses also have the option to share the notes section of the course details via email or sms.
 
 ## Design Process
-Section B of the project requirements specify 7 layouts to use throughout the application. However, how these are designed exactly are left to interpretation. 
-The storyboard for section D of the project requirements, outlining the layouts and application flow for the program can be found [here](../main/Scheduler-Storyboard.pdf).
+Section B of the project requirements specify 7 layouts to use throughout the application. However, how these are designed are left to interpretation. 
+The storyboard for section D of the project requirements which outlines the layouts and application flow for the program can be found [here](../main/Scheduler-Storyboard.pdf).
 
 ## Acknowledgements 
 This project is included as part of my portfolio to showcase the skills learned throughout my time at WGU.  
