@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.wguscheduler_marywilliams.UI.AssessmentListActivity">
+    <item
+        android:id="@+id/assessment_add"
+        android:title="Add Assessment"
+        android:icon="@drawable/ic_baseline_add_24"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/assessment_all_delete"
+        android:title="Delete All"
+        android:icon="@drawable/ic_baseline_delete_24"
+        app:showAsAction="never"/>
+</menu>

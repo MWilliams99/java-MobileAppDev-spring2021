@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.CourseDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="223dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="167dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:useDefaultMargins="true"
+                android:columnCount="2">
+                <TextView
+                    android:textSize="24sp"
+                    android:text="Title:"
+                    android:layout_gravity="left"
+                    />
+                <EditText
+                    android:id="@+id/courseTitleEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:textSize="24sp"
+                    android:text="Start:"
+                    android:layout_gravity="left"/>
+                <EditText
+                    android:id="@+id/courseStartEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:textSize="20sp"
+                    android:inputType="date"
+                    android:hint="YYYY-MM-DD"/>
+                <TextView
+                    android:textSize="24sp"
+                    android:text="End:"
+                    android:layout_gravity="left"/>
+                <EditText
+                    android:id="@+id/courseEndEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:textSize="20sp"
+                    android:inputType="date"
+                    android:hint="YYYY-MM-DD"/>
+                <TextView
+                    android:textSize="24sp"
+                    android:text="Status:"
+                    android:layout_gravity="left"/>
+                <Spinner
+                    android:id="@+id/spinner_CourseStatus"
+                    android:layout_gravity="fill_horizontal"/>
+
+                <TextView
+                    android:textSize="24sp"
+                    android:text="Notes:"
+                    android:layout_gravity="left"/>
+                <EditText
+                    android:id="@+id/courseNotesEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:textSize="20sp"
+                    android:inputType="textMultiLine"/>
+
+
+                <TextView
+                    android:layout_columnSpan="2"
+                    android:text="Instructor 1:"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textStyle="italic"
+                    android:textAllCaps="true"/>
+                <TextView
+                    android:textSize="24sp"
+                    android:text="Name:"
+                    android:layout_gravity="left"/>
+                <EditText
+                    android:id="@+id/courseInst1Name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:textSize="24sp"
+                    android:text="Phone:"
+                    android:layout_gravity="left"/>
+                <EditText
+                    android:id="@+id/courseInst1Phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:textSize="20sp"
+                    android:inputType="phone"/>
+                <TextView
+                    android:textSize="24sp"
+                    android:text="Email:"
+                    android:layout_gravity="left"/>
+                <EditText
+                    android:id="@+id/courseInst1Email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:textSize="20sp"
+                    android:inputType="textEmailAddress"/>
+
+
+                <TextView
+                    android:layout_columnSpan="2"
+                    android:text="Instructor 2:"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textStyle="italic"
+                    android:textAllCaps="true"/>
+                <TextView
+                    android:textSize="24sp"
+                    android:text="Name:"
+                    android:layout_gravity="left"/>
+                <EditText
+                    android:id="@+id/courseInst2Name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:textSize="24sp"
+                    android:text="Phone:"
+                    android:layout_gravity="left"/>
+                <EditText
+                    android:id="@+id/courseInst2Phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:textSize="20sp"
+                    android:inputType="phone"/>
+                <TextView
+                    android:textSize="24sp"
+                    android:text="Email:"
+                    android:layout_gravity="left"/>
+                <EditText
+                    android:id="@+id/courseInst2Email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:textSize="20sp"
+                    android:inputType="textEmailAddress"/>
+
+                <Button
+                    android:id="@+id/saveCourseButton"
+                    android:onClick="saveCourse"
+                    android:text="Save Course"
+                    android:layout_gravity="right"
+                    android:layout_column="1" />
+            </GridLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/assessmentListButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Assessment List"
+            android:onClick="toAssessmentList"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="132dp"
+            tools:layout_editor_absoluteY="621dp" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
