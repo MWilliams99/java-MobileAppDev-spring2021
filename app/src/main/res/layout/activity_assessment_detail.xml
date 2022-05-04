@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.AssessmentDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="223dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="167dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:useDefaultMargins="true"
+                android:columnCount="2">
+                <TextView
+                    android:textSize="24sp"
+                    android:text="Title:"
+                    android:layout_gravity="left"
+                    />
+                <EditText
+                    android:id="@+id/assessmentTitleEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:textSize="24sp"
+                    android:text="Start:"
+                    android:layout_gravity="left"
+                    />
+                <EditText
+                    android:id="@+id/assessmentStartEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:textSize="20sp"
+                    android:inputType="date"
+                    android:hint="YYYY-MM-DD"/>
+
+                <TextView
+                    android:textSize="24sp"
+                    android:text="End:"
+                    android:layout_gravity="left"
+                    />
+                <EditText
+                    android:id="@+id/assessmentEndEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:textSize="20sp"
+                    android:inputType="date"
+                    android:hint="YYYY-MM-DD"/>
+
+                <TextView
+                    android:layout_columnSpan="2"
+                    android:text="Assessment Type:"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="italic"
+                    android:textAllCaps="true"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_columnSpan="2">
+                    <RadioButton
+                        android:id="@+id/radio_PreA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Pre-Assessment"
+                        android:textSize="16sp"/>
+                    <RadioButton
+                        android:id="@+id/radio_PA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Performance Assessment"
+                        android:textSize="16sp"/>
+                    <RadioButton
+                        android:id="@+id/radio_OA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Objective Assessment"
+                        android:textSize="16sp"/>
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/saveAssessmentButton"
+                    android:onClick="saveAssessment"
+                    android:text="Save Assessment"
+                    android:layout_gravity="right"
+                    android:layout_column="1" />
+            </GridLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

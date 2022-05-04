@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.TermDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="223dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="167dp">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:useDefaultMargins="true"
+                android:columnCount="2">
+                <TextView
+                    android:textSize="24sp"
+                    android:text="Title:"
+                    android:layout_gravity="left"
+                    />
+                <EditText
+                    android:id="@+id/termTitleEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:textSize="24sp"
+                    android:text="Start:"
+                    android:layout_gravity="left"/>
+                <EditText
+                    android:id="@+id/termStartEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:textSize="20sp"
+                    android:inputType="date"
+                    android:hint="YYYY-MM-DD"/>
+
+                <TextView
+                    android:textSize="24sp"
+                    android:text="End:"
+                    android:layout_gravity="left"/>
+                <EditText
+                    android:id="@+id/termEndEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:textSize="20sp"
+                    android:inputType="date"
+                    android:hint="YYYY-MM-DD"/>
+
+                <Button
+                    android:id="@+id/saveTermButton"
+                    android:onClick="saveTerm"
+                    android:text="Save Term"
+                    android:layout_gravity="right"
+                    android:layout_column="1" />
+            </GridLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/courseListButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Course List"
+            android:onClick="toCourseList"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="196dp"
+            tools:layout_editor_absoluteY="580dp" />
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

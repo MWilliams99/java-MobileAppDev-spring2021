@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.wguscheduler_marywilliams.UI.TermDetailActivity">
+    <item
+        android:id="@+id/main_populate"
+        android:title="Populate Database"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/main_clear"
+        android:title="Clear Database"
+        android:icon="@drawable/ic_baseline_delete_24"
+        app:showAsAction="never"/>
+
+</menu>
