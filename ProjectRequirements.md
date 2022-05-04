@@ -55,11 +55,11 @@ C. Implement a scheduler within your application from Part A and include the fol
  
   1. Include the following interface requirements in the application from part C:
 
-    - the ability to scroll vertically
-    - an action bar
-    - two layouts
-    - input controls
-    - buttons
+  - the ability to scroll vertically
+  - an action bar
+  - two layouts
+  - input controls
+  - buttons
  
 D. Create a storyboard to demonstrate application flow that includes each of the menus and screens from part B.
  
