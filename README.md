@@ -2,13 +2,12 @@
 
 ## Project Description
 Mobile Application Development project that I completed in Spring 2021 for the C196 course at Western Governors University.  
-Every student is given the same set of requirements for this project, which can be found [here]().  
+Every student is given the same set of requirements for this project, which can be found [here](../main/ProjectRequirements.md).  
 This program fulfills parts A-C of the project requirements.
 
 This project was completed on March 28th, 2021.
 
-Java was used to code this project as that is what I chose to focus in during my Software Development degree. ... used for the database element/storage of items.  
-.. was used for ...
+Java was used to code this project as that is what I chose to focus in during my Software Development degree. Data is saved locally using SQL and Room.
 
 This project has the student create an Android mobile application for the user to schedule terms, courses, and assessments. When the application is opened the user is met with a homescreen that links to a term list.  
 The term list allows the user to add terms. Upon clicking on a specific term, the user can edit the term details and navigate to a course list for that term.  
@@ -19,7 +18,7 @@ Menu options for all three edit views of term, course, and assessment allow the 
 
 ## Design Process
 Section B of the project requirements specify 7 layouts to use throughout the application. However, how these are designed exactly are left to interpretation. 
-The storyboard for section D of the project requirements, outlining the layouts and application flow for the program can be found [here]().
+The storyboard for section D of the project requirements, outlining the layouts and application flow for the program can be found [here](../main/Scheduler-Storyboard.pdf).
 
 ## Acknowledgements 
 This project is included as part of my portfolio to showcase the skills learned throughout my time at WGU.  
