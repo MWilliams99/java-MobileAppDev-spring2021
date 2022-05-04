@@ -54,6 +54,7 @@ C. Implement a scheduler within your application from Part A and include the fol
   - the use of both declarative and programmatic methods to create a user interface
  
   1. Include the following interface requirements in the application from part C:
+
     - the ability to scroll vertically
     - an action bar
     - two layouts
